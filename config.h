@@ -106,24 +106,24 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_r,      quit,           {0} },
-    { MODKEY|Mod1Mask,              XK_w,       spawn,          SHCMD("st -e nmtui") },
-    { MODKEY|Mod1Mask,              XK_n,       spawn,          SHCMD("st -e nvim") },
-    { MODKEY|ShiftMask,		        XK_q,	    spawn,		    SHCMD("st -e sudo poweroff") },
-    { MODKEY|ShiftMask,		        XK_b,	    spawn,		    SHCMD("st -e sudo reboot") },
-    { MODKEY|ControlMask,		    XK_l,	    spawn,		    SHCMD("slock") },
-    { MODKEY|ShiftMask,		        XK_v,	    spawn,		    SHCMD("pavucontrol") },
-    { MODKEY,		                XK_w,	    spawn,		    SHCMD("firefox-beta") },
-    { MODKEY,                       XK_e,       spawn,          {.v = pcmanfm } },
-    { MODKEY,		                XK_F2,	    spawn,		    SHCMD("killall dwmblocks && dwmblocks") },
+    { MODKEY|Mod1Mask,              	XK_w,       spawn,          SHCMD("st -e nmtui") },
+    { MODKEY|Mod1Mask,              	XK_n,       spawn,          SHCMD("st -e nvim") },
+    { MODKEY|ShiftMask,		        XK_q,	    spawn,	    SHCMD("st -e sudo poweroff") },
+    { MODKEY|ShiftMask,		        XK_b,	    spawn,	    SHCMD("st -e sudo reboot") },
+    { MODKEY|ControlMask,		XK_l,	    spawn,	    SHCMD("slock") },
+    { MODKEY|ShiftMask,		        XK_v,	    spawn,	    SHCMD("pavucontrol") },
+    { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox-beta") },
+    { MODKEY,                       	XK_e,       spawn,          {.v = pcmanfm } },
+    { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
     // Screenshot With Scrot
-    { 0,                            XK_Print,   spawn,		SHCMD("$HOME/.scripts/fullscreenshot") },
-    { MODKEY,                       XK_Print,   spawn,		SHCMD("$HOME/.scripts/windowscreenshot") },
-    { ShiftMask,                    XK_Print,   spawn,		SHCMD("$HOME/.scripts/areascreenshot") },
+    { 0,                            XK_Print,   spawn,		    SHCMD("$HOME/.scripts/fullscreenshot") },
+    { MODKEY,                       XK_Print,   spawn,		    SHCMD("$HOME/.scripts/windowscreenshot") },
+    { ShiftMask,                    XK_Print,   spawn,		    SHCMD("$HOME/.scripts/areascreenshot") },
     // Volume Control
     { 0,               XF86XK_AudioRaiseVolume, spawn,		SHCMD("pactl -- set-sink-volume 0 +5%; pkill -RTMIN+10 dwmblocks") },
     { 0,               XF86XK_AudioLowerVolume, spawn,		SHCMD("pactl -- set-sink-volume 0 -5%; pkill -RTMIN+10 dwmblocks") },
-    { 0,            		  XF86XK_AudioMute, spawn,		SHCMD("pactl -- set-sink-volume 0 0%; pkill -RTMIN+10 dwmblocks") },
-    { ShiftMask,              XF86XK_AudioMute, spawn,		SHCMD("pactl -- set-sink-volume 0 50%; pkill -RTMIN+10 dwmblocks") },
+    { 0,               XF86XK_AudioMute, 	spawn,		SHCMD("pactl -- set-sink-volume 0 0%; pkill -RTMIN+10 dwmblocks") },
+    { ShiftMask,       XF86XK_AudioMute, 	spawn,		SHCMD("pactl -- set-sink-volume 0 50%; pkill -RTMIN+10 dwmblocks") },
 };
 
 /* button definitions */
