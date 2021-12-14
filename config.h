@@ -68,7 +68,6 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-p", "Run:", NULL };
 static const char *passmenu[] = { "passmenu", "-p", "Pass:", NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *pcmanfm[] = { "pcmanfm", "/data/vivek/", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -114,8 +113,8 @@ static Key keys[] = {
     { MODKEY|ShiftMask,		        XK_b,	    spawn,	    SHCMD("st -e sudo reboot") },
     { MODKEY|ControlMask,		XK_l,	    spawn,	    SHCMD("slock") },
     { MODKEY|ShiftMask,		        XK_v,	    spawn,	    SHCMD("pavucontrol") },
+    { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
     { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox-beta") },
-    { MODKEY,                       	XK_e,       spawn,          {.v = pcmanfm } },
     { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
     // Screenshot With Scrot
     { 0,                            XK_Print,   spawn,		    SHCMD("$HOME/.scripts/fullscreenshot") },
