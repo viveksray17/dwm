@@ -111,6 +111,7 @@ static Key keys[] = {
     { MODKEY|Mod1Mask,              	XK_n,       spawn,          SHCMD("st -e nvim") },
     { MODKEY|ShiftMask,		        XK_q,	    spawn,	    SHCMD("st -e sudo poweroff") },
     { MODKEY|ShiftMask,		        XK_b,	    spawn,	    SHCMD("st -e sudo reboot") },
+    { MODKEY|Mod1Mask,		        XK_p,	    spawn,	    SHCMD("st -e ~/.scripts/add-pass") },
     { MODKEY|ControlMask,		XK_l,	    spawn,	    SHCMD("slock") },
     { MODKEY|ShiftMask,		        XK_v,	    spawn,	    SHCMD("pavucontrol") },
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
