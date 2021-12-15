@@ -115,7 +115,7 @@ static Key keys[] = {
     { MODKEY|ControlMask,		XK_l,	    spawn,	    SHCMD("slock") },
     { MODKEY|ShiftMask,		        XK_v,	    spawn,	    SHCMD("pavucontrol") },
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
-    { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox-beta") },
+    { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox") },
     { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
     // Screenshot With Scrot
     { 0,                            XK_Print,   spawn,		    SHCMD("$HOME/.scripts/fullscreenshot") },
