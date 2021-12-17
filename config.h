@@ -117,6 +117,7 @@ static Key keys[] = {
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
     { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox") },
     { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
+    { MODKEY,		                XK_F3,	    spawn,	    SHCMD("sxiv -t ~/Pictures/wallpapers") },
     // Screenshot With Scrot
     { 0,                            XK_Print,   spawn,		    SHCMD("$HOME/.scripts/fullscreenshot") },
     { MODKEY,                       XK_Print,   spawn,		    SHCMD("$HOME/.scripts/windowscreenshot") },
