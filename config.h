@@ -108,7 +108,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_r,      quit,           {0} },
+	{ MODKEY,                       XK_r,      quit,           {0} },
     { MODKEY|Mod1Mask,              	XK_w,       spawn,          SHCMD("st -e nmtui") },
     { MODKEY|Mod1Mask,              	XK_n,       spawn,          SHCMD("st -e nvim") },
     { MODKEY|ShiftMask,		        XK_q,	    spawn,	    SHCMD("st -e sudo poweroff") },
