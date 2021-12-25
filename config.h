@@ -115,7 +115,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,		        XK_b,	    spawn,	    SHCMD("st -e sudo reboot") },
     { MODKEY|Mod1Mask,		        XK_p,	    spawn,	    SHCMD("st -e ~/.scripts/add-pass") },
     { MODKEY|ControlMask,		XK_l,	    spawn,	    SHCMD("slock") },
-    { MODKEY|ShiftMask,		        XK_v,	    spawn,	    SHCMD("pavucontrol") },
+    { MODKEY|ShiftMask,		        XK_v,	    spawn,	    SHCMD("st -e ~/.local/bin/pulsemixer") },
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
     { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox") },
     { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
