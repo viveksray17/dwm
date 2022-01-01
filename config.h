@@ -116,7 +116,7 @@ static Key keys[] = {
     { MODKEY,         		        XK_x,	    spawn,	    SHCMD("poweroff") },
     { MODKEY,         		        XK_s,	    spawn,	    SHCMD("reboot") },
     { MODKEY|ShiftMask,		        XK_p,	    spawn,	    SHCMD("st -e add-pass") },
-    { MODKEY|ShiftMask, 		    XK_l,	    spawn,	    SHCMD("slock") },
+    { MODKEY|ShiftMask, 		XK_l,	    spawn,	    SHCMD("slock") },
     { MODKEY,         		        XK_v,	    spawn,	    SHCMD("st -e pulsemixer") },
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
     { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox") },
