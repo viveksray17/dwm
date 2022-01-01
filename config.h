@@ -38,6 +38,9 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "st-256color",     NULL,       "pulsemixer",       0,            1,           -1 },
+	{ "st-256color",     NULL,       "nmtui",       0,            1,           -1 },
+	{ "st-256color",     NULL,       "add-bookmark",       0,            1,           -1 },
+	{ "st-256color",     NULL,       "add-pass",       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -110,28 +113,28 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_r,      quit,           {0} },
-    { MODKEY|Mod1Mask,              	XK_w,       spawn,          SHCMD("st -e nmtui") },
-    { MODKEY|Mod1Mask,              	XK_n,       spawn,          SHCMD("st -e nvim") },
-    { MODKEY|ShiftMask,		        XK_q,	    spawn,	    SHCMD("st -e sudo poweroff") },
-    { MODKEY|ShiftMask,		        XK_b,	    spawn,	    SHCMD("st -e sudo reboot") },
-    { MODKEY|Mod1Mask,		        XK_p,	    spawn,	    SHCMD("st -e ~/.scripts/add-pass") },
-    { MODKEY|ControlMask,		XK_l,	    spawn,	    SHCMD("slock") },
-    { MODKEY|ShiftMask,		        XK_v,	    spawn,	    SHCMD("st -e ~/.local/bin/pulsemixer") },
+    { MODKEY,              	        XK_n,       spawn,          SHCMD("st -e nmtui") },
+    { MODKEY,         		        XK_x,	    spawn,	    SHCMD("poweroff") },
+    { MODKEY,         		        XK_s,	    spawn,	    SHCMD("reboot") },
+    { MODKEY|ShiftMask,		        XK_p,	    spawn,	    SHCMD("st -e add-pass") },
+    { MODKEY|ShiftMask, 		    XK_l,	    spawn,	    SHCMD("slock") },
+    { MODKEY,         		        XK_v,	    spawn,	    SHCMD("st -e pulsemixer") },
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
     { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox") },
-    { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
+    { MODKEY,		                XK_F2,	    spawn,	    SHCMD("pkill dwmblocks && dwmblocks") },
     { MODKEY,		                XK_F3,	    spawn,	    SHCMD("sxiv -t ~/Pictures/wallpapers") },
+    { MODKEY,		                XK_b,	    spawn,	    SHCMD("dmenubookmarks") },
+    { MODKEY|ShiftMask,		        XK_b,	    spawn,	    SHCMD("st -e add-bookmark") },
     // Screenshot With Scrot
-    { 0,                            XK_Print,   spawn,		    SHCMD("$HOME/.scripts/fullscreenshot") },
-    { MODKEY,                       XK_Print,   spawn,		    SHCMD("$HOME/.scripts/windowscreenshot") },
-    { ShiftMask,                    XK_Print,   spawn,		    SHCMD("$HOME/.scripts/areascreenshot") },
+    { 0,                            XK_Print,   spawn,		    SHCMD("fullscreenshot") },
+    { MODKEY,                       XK_Print,   spawn,		    SHCMD("windowscreenshot") },
+    { ShiftMask,                    XK_Print,   spawn,		    SHCMD("areascreenshot") },
     // Volume Control
     { 0,               XF86XK_AudioRaiseVolume, spawn,		SHCMD("pactl -- set-sink-volume 0 +5%; pkill -RTMIN+10 dwmblocks") },
     { 0,               XF86XK_AudioLowerVolume, spawn,		SHCMD("pactl -- set-sink-volume 0 -5%; pkill -RTMIN+10 dwmblocks") },
     { 0,               XF86XK_AudioMute, 	spawn,		SHCMD("pactl -- set-sink-volume 0 0%; pkill -RTMIN+10 dwmblocks") },
     { ShiftMask,       XF86XK_AudioMute, 	spawn,		SHCMD("pactl -- set-sink-volume 0 50%; pkill -RTMIN+10 dwmblocks") },
 };
-
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
