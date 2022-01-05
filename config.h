@@ -120,7 +120,7 @@ static Key keys[] = {
     { MODKEY,         		        XK_v,	    spawn,	    SHCMD("st -e pulsemixer") },
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
     { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox") },
-    { MODKEY,		                XK_F2,	    spawn,	    SHCMD("pkill dwmblocks && dwmblocks") },
+    { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
     { MODKEY,		                XK_F3,	    spawn,	    SHCMD("sxiv -t ~/Pictures/wallpapers") },
     { MODKEY,		                XK_b,	    spawn,	    SHCMD("dmenubookmarks") },
     { MODKEY|ShiftMask,		        XK_b,	    spawn,	    SHCMD("st -e add-bookmark") },
