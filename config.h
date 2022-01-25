@@ -12,9 +12,9 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono Medium:size=11:antialias=true:autohint=true",
+static const char *fonts[]          = { "Fira Mono Medium:size=11:antialias=true:autohint=true",
                                         "Noto Color Emoji:size=11:antialias=true:autohint=true" };
-static const char dmenufont[]       = "JetBrains Mono Medium:size=11";
+static const char dmenufont[]       = "Fira Mono Medium:size=11";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -117,7 +117,7 @@ static Key keys[] = {
     { MODKEY,         		        XK_s,	    spawn,	    SHCMD("dmenureboot") },
     { MODKEY|ShiftMask,		        XK_p,	    spawn,	    SHCMD("st -e add-pass") },
     { MODKEY|ShiftMask, 		XK_l,	    spawn,	    SHCMD("slock") },
-    { MODKEY,         		        XK_v,	    spawn,	    SHCMD("st -e pulsemixer") },
+    { MODKEY,         		        XK_v,	    spawn,	    SHCMD("st -e pulsemixer; pkill -RTMIN+10 dwmblocks") },
     { MODKEY,       		        XK_e,	    spawn,	    SHCMD("pcmanfm") },
     { MODKEY,		                XK_w,	    spawn,	    SHCMD("firefox") },
     { MODKEY,		                XK_F2,	    spawn,	    SHCMD("killall dwmblocks && dwmblocks") },
