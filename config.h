@@ -38,7 +38,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "st-256color",     NULL,       "pulsemixer",       0,            1,           -1 },
-	{ "st-256color",     NULL,       "nmtui",       0,            1,           -1 },
+	{ "st-256color",     NULL,       "nmtui-connect",       0,            1,           -1 },
 	{ "st-256color",     NULL,       "add-bookmark",       0,            1,           -1 },
 	{ "st-256color",     NULL,       "add-pass",       0,            1,           -1 },
 };
@@ -112,7 +112,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_r,      quit,           {0} },
-    { MODKEY,              	        XK_n,       spawn,          SHCMD("st -e nmtui") },
+    { MODKEY,              	        XK_n,       spawn,          SHCMD("st -e nmtui-connect") },
     { MODKEY,         		        XK_x,	    spawn,	    SHCMD("dmenupoweroff") },
     { MODKEY,         		        XK_s,	    spawn,	    SHCMD("dmenureboot") },
     { MODKEY|ShiftMask,		        XK_p,	    spawn,	    SHCMD("st -e add-pass") },
