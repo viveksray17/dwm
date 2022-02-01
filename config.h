@@ -112,7 +112,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_r,      quit,           {0} },
-    { MODKEY,              	        XK_n,       spawn,          SHCMD("st -e nmtui-connect") },
+    { MODKEY,              	        XK_n,       spawn,          SHCMD("st -e nmtui-connect;pkill -RTMIN+15 dwmblocks") },
     { MODKEY,         		        XK_x,	    spawn,	    SHCMD("dmenupoweroff") },
     { MODKEY,         		        XK_s,	    spawn,	    SHCMD("dmenureboot") },
     { MODKEY|ShiftMask,		        XK_p,	    spawn,	    SHCMD("st -e add-pass") },
