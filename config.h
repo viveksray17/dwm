@@ -15,7 +15,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Fira Mono Medium:size=11:antialias=true:autohint=true",
                                         "Noto Color Emoji:size=11:antialias=true:autohint=true" };
 static const char dmenufont[]       = "Fira Mono Medium:size=11";
-static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#1d2021";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
